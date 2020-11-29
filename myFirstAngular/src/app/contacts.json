@@ -1,0 +1,40 @@
+{
+  "contacts": [
+    {
+      "firstName": "Hasan",
+      "surname": "Ekici",
+      "email": "h-ekici@outlook.com",
+      "id": 1
+    },
+    {
+      "firstName": "bram",
+      "surname": "bram",
+      "email": "bram@live.nl",
+      "id": 2
+    },
+    {
+      "firstName": "ho",
+      "surname": "i",
+      "email": "hoi@live.nl",
+      "id": 3
+    },
+    {
+      "firstName": "me",
+      "surname": "lk",
+      "email": "melk@live.nl",
+      "id": 4
+    },
+    {
+      "firstName": "Hasan",
+      "surname": "Ekici",
+      "email": "h-ekici@outlook.com",
+      "id": 5
+    },
+    {
+      "firstName": "Hasan",
+      "surname": "Ekici",
+      "email": "h-ekici@outlook.com",
+      "id": 6
+    }
+  ]
+}

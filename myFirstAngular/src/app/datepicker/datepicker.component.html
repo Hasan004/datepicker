@@ -1,0 +1,22 @@
+<div class="text-white m-4">
+
+<h2 class="mt-4 mb-5">The Contacts</h2>
+
+<table class="table text-white">
+  <tr >
+    <th scope="col">Name</th>
+    <th scope="col">E-mail address</th>
+    <th scope="col">Action</th>
+  </tr>
+  <tr scope="row" *ngFor="let c of contacts$ | async">
+    <td>{{c.firstname}} {{c.surname}}</td>
+    <td>{{c.email}}</td>
+    <td>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <a [routerLink]="['/edit/'+c.id]"><button class="btn btn-primary mr-3">Edit</button></a>
+        <button class="btn btn-danger" (click)="deleteContact(c)">Delete</button>
+      </div>
+    </td>
+  </tr>
+</table>
+</div>

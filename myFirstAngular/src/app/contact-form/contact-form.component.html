@@ -1,0 +1,25 @@
+<div class="text-white m-4">
+    <h1 class="mb-5">Datepicker</h1>
+
+    <form (ngSubmit)="addContact()" #f="ngForm">
+	<div class="m-3">
+		<label for="firstName">First name:</label><br>
+		<input type="text" id="firstname" name="firstname" [(ngModel)]="newContact.firstname" required maxlength="50" minlength="2" pattern="('^[a-zA-Z \-\']+')" class="form-control col-5 ml-5">
+	</div>
+	<div class="m-3">
+		<label for="surname">Surname:</label><br>
+		<input type="text" id="surname" name="surname" [(ngModel)]="newContact.surname" class="form-control col-5 ml-5">
+	</div>
+	<div class="m-3">
+		<label for="email">E-mail address:</label><br>
+        <input type="text" id="email" name="email" [(ngModel)]="newContact.email" class="form-control col-5 ml-5"><br>
+	<button class="btn btn-primary pl-4 pr-4 ml-5 mt-4 mb-5" [disabled]="!ableButton">Add</button>
+	<!-- <button (click)="onCreateServer()" class="m-2 p-3">server</button> -->
+	</div>
+
+    </form>
+<hr>
+<!-- <input type="text" [(ngModel)]="serverName"> -->
+<!-- <p>{{serverName}}</p>
+<p>{{serverCreationStatus}}</p> -->
+</div>
